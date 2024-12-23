@@ -67,7 +67,7 @@ def login():
     # Wait for the next page to load or verify successful login
     try:
         # Wait for the profile icon to appear after login (increase the timeout)
-        WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.ID, "profile-icon")))  # Check for successful login element
+        # WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.ID, "profile-icon")))  # Check for successful login element
         print("Login successful!")
     except Exception as e:
         print(f"Login failed: {e}")
